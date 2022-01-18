@@ -40,5 +40,8 @@
       </div>
     </div>
   </div>
+  <footer>
+    <script src="index.js"/>
+  </footer>
 </body>
 </html>
