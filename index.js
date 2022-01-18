@@ -1,3 +1,3 @@
-document.querySelector('.card.card-sub').forEach(element => {
-  element.addEventListener('click', ev => ev.target.text)
+document.querySelectorAll('.card.card-sub').forEach(element => {
+  element.addEventListener('click', ev => `${window.location.origin}/${ev.target.innerText}`)
 });

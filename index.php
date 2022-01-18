@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card card-main">""
+  <div class="card card-main">
     <div class="card card-sub">
       <div class="card-title">
         Chains Of Responsibility
