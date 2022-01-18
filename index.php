@@ -9,32 +9,32 @@
 </head>
 <body>
   <div class="card card-main">
-    <div class="card sub-card">
+    <div class="card card-sub">
       <div class="card-title">
         Chains Of Responsibility
       </div>
     </div>
-    <div class="card sub-card">
+    <div class="card card-sub">
       <div class="card-title">
         Command
       </div>
     </div>
-    <div class="card sub-card">
+    <div class="card card-sub">
       <div class="card-title">
         Observer
       </div>
     </div>
-    <div class="card sub-card">
+    <div class="card card-sub">
       <div class="card-title">
         State
       </div>
     </div>
-    <div class="card sub-card">
+    <div class="card card-sub">
       <div class="card-title">
         Strategy
       </div>
     </div>
-    <div class="card sub-card">
+    <div class="card card-sub">
       <div class="card-title">
         Template Method
       </div>

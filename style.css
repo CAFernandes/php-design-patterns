@@ -28,4 +28,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .card {
   padding: .5rem;
+  color: #34CB79;
+  border: .0625rem solid #215353;
+  background-color: #a5cfae;
+}
+.card-main {
+  display: flex;
+  background-color: #babac2;
+}
+.card-sub {
+  border: .0625rem solid #215353;
+  border-radius: .5rem;
+}
+.card-title {
+  cursor: pointer;
 }
