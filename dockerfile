@@ -1,11 +1,11 @@
 FROM ubuntu:16.04
 
-# Maintainer
-MAINTAINER Caio Fernandes "fcaioalberto@gmail.com"
-
 ENV NGINX_VERSION 1.9.3-1~jessie
-
-RUN apt-get update && apt-get install -y nginx php7.0-fpm curl git && apt-get clean
+RUN apt-get update
+RUN apt -y install software-properties-common apt-transport-https wget
+RUN cleaadd-apt-repository ppa:ondrej/php
+RUN apt-get update
+RUN apt-get install -y nginx php7.4-fpm curl git && apt-get clean
 
 # NGINX
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
@@ -19,15 +19,14 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
 # BUILD
-WORKDIR /var/www/html
-RUN git clone https://github.com/CAFernandes/php-desing-patterns.git
+#WORKDIR /var/www/html
+#RUN git clone https://github.com/CAFernandes/php-desing-patterns.git
 
 RUN apt update
-RUN apt install software-properties-common apt-transport-https wget
 RUN wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 RUN add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 RUN apt install code
 RUN apt update && apt upgrade
 
 EXPOSE 80 443
-CMD service php7.0-fpm start && nginx -g "daemon off;"
+CMD service php8.0 start && nginx -g "daemon off;"
