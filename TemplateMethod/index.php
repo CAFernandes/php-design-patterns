@@ -1,15 +1,10 @@
 <?php
-spl_autoload_register(function ($class) {
-  $dirs = array(
-    __DIR__,
-    __DIR__ . '/Impostos/'
-  );
-  foreach ($dirs as $dir) {
-    if (file_exists("{$dir}/{$class}.php")) {
-      include_once("{$dir}/{$class}.php");
-    }
-  }
-});
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use TemplateMethod\{Orcamento, CalculadoraDeImpostos, Item};
+use TemplateMethod\Impostos\{ICMS, ISS, ICPP, IKCV};
+
 $orcamento = new Orcamento(array(
   new Item("LAPIS", 125),
   new Item("CANETA", 150),

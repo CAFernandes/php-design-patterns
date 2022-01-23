@@ -1,15 +1,8 @@
 <?php
-spl_autoload_register(function ($class) {
-  $dirs = array(
-    __DIR__,
-    __DIR__ . '/Impostos/'
-  );
-  foreach ($dirs as $dir) {
-    if (file_exists("{$dir}/{$class}.php")) {
-      include_once("{$dir}/{$class}.php");
-    }
-  }
-});
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Command\{GerarPedidoCommand, GerarPedidoHandler};
+
 
 $valor = 1234.56;
 $quantidadeItens = 7;
@@ -20,4 +13,3 @@ $gerarPedidoCommand = new GerarPedidoCommand($valor, $quantidadeItens, $nomeClie
 $gerarPedidoHandler = new GerarPedidoHandler(/* passaria as dependencias aqui */);
 
 $gerarPedidoHandler->execute($gerarPedidoCommand);
-
