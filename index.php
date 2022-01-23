@@ -1,5 +1,3 @@
-<?php echo "Hello World" ?>
-<?php exit ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
