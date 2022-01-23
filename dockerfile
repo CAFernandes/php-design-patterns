@@ -19,8 +19,8 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
 # BUILD
-#WORKDIR /var/www/html
-#RUN git clone https://github.com/CAFernandes/php-desing-patterns.git
+WORKDIR /var/www/html
+RUN git clone https://github.com/CAFernandes/php-desing-patterns.git
 
 RUN apt update
 RUN wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
