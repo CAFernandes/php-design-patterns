@@ -1,4 +1,4 @@
-# php-desing-patterns
+# php-design-patterns
 Códigos de desing patterns feitos com o curso da Alura
 
 
