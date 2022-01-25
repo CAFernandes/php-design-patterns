@@ -8,8 +8,8 @@ use Observer\AcoesAoGerarPedido\AcaoAposGerarPedido;
 
 class GerarPedidoHandler
 {
-  private static $orcamento;
-  private static $pedido;
+  private static Orcamento $orcamento;
+  private static Pedido $pedido;
   /** @var AcaoAposGerarPedido[] */
   private array $acoesAposGerarPedido = [];
 

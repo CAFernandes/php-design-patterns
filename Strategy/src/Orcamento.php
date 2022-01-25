@@ -4,7 +4,7 @@ namespace Strategy;
 
 class Orcamento
 {
-  private $valor;
+  private float $valor;
 
   public function __construct($valor)
   {

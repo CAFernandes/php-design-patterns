@@ -6,5 +6,5 @@ use TemplateMethod\Orcamento;
 
 interface Imposto
 {
-  public function calcula(Orcamento $orcamento);
+  public function calcula(Orcamento $orcamento): float;
 }

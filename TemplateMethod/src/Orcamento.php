@@ -4,11 +4,14 @@ namespace TemplateMethod;
 
 class Orcamento
 {
-  private $itens = array();
+  private array $itens;
 
   public function __construct($itens)
   {
-    $this->itens = $itens;
+    $this->itens = array();
+    if (is_array($itens)) {
+      $this->itens = $itens;
+    }
   }
 
   public function getValor()

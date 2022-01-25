@@ -3,6 +3,7 @@
 namespace Command\EstadoOrcamento;
 
 use Command\EstadoOrcamento\EstadoDeUmOrcamento;
+use Command\Orcamento;
 
 class Finalizado extends EstadoDeUmOrcamento
 {

@@ -3,7 +3,7 @@
 namespace TemplateMethod\Impostos;
 
 use TemplateMethod\Orcamento;
-
+use TemplateMethod\Impostos\ImpostoCom2Aliquotas;
 
 class ICPP extends ImpostoCom2Aliquotas
 {

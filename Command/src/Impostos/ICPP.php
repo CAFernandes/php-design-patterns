@@ -6,7 +6,6 @@ use Command\Orcamento;
 
 class ICPP extends ImpostoCom2Aliquotas
 {
-
   public function __construct()
   {
     self::$taxaMinima = 0.02;

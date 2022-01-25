@@ -7,7 +7,11 @@ use Command\Orcamento;
 
 class ISS implements Imposto
 {
-  private static $iss = 0.06;
+  private static float $iss;
+  public function __construct()
+  {
+    self::$iss = 0.06;
+  }
   public function calcula(Orcamento $orcamento): float
   {
     return $orcamento->getValor() * self::$iss;

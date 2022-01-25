@@ -4,8 +4,8 @@ namespace Iterator;
 
 class Item
 {
-  private $name;
-  private $price;
+  private string $name;
+  private float $price;
 
   public function __construct($name, $price)
   {

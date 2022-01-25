@@ -7,8 +7,8 @@ use Command\Orcamento;
 
 abstract class ImpostoCom2Aliquotas implements Imposto
 {
-  protected static $taxaMinima = 0;
-  protected static $taxaMaxima = 0;
+  protected static float $taxaMinima;
+  protected static float $taxaMaxima;
   public function calcula(Orcamento $orcamento): float
   {
     if ($this->deveAplicarTaxaMaxima($orcamento)) {

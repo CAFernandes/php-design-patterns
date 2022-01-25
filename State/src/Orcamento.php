@@ -7,11 +7,12 @@ use State\EstadoOrcamento\{EstadoDeUmOrcamento, EmAprovacao};
 class Orcamento
 {
   private array $itens;
-  private float $valor = 0;
+  private float $valor;
   private EstadoDeUmOrcamento $estadoAtual;
 
   public function __construct(array $itens)
   {
+    $this->valor = 0;
     $this->estadoAtual = new EmAprovacao();
     foreach ($itens as $item) {
       $this->adicionaItem($item);

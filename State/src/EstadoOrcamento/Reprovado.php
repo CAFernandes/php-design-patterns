@@ -3,8 +3,6 @@
 namespace State\EstadoOrcamento;
 
 use State\Orcamento;
-use DomainException;
-
 class Reprovado extends EstadoDeUmOrcamento
 {
   public function __construct()
@@ -13,7 +11,7 @@ class Reprovado extends EstadoDeUmOrcamento
   }
   public function calculaDescontoExtra(Orcamento $orcamento): float
   {
-    throw new DomainException("Orçamentos reprovados não recebem desconto extra");
+    throw new \DomainException("Orçamentos reprovados não recebem desconto extra");
   }
 
   public function finaliza(Orcamento $orcamento): void

@@ -6,9 +6,10 @@ use State\Orcamento;
 
 class SemDesconto extends Desconto
 {
-  protected static $porcentagemDesconto = 0;
+  protected static float $porcentagemDesconto;
   public function __construct(Desconto $proximoDesconto = null)
   {
+    self::$porcentagemDesconto = 0;
     parent::__construct($proximoDesconto);
   }
   public function desconta(Orcamento $orcamento): float

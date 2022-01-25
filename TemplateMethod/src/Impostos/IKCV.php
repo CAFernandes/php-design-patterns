@@ -3,6 +3,7 @@
 namespace TemplateMethod\Impostos;
 
 use TemplateMethod\Orcamento;
+use TemplateMethod\Impostos\ImpostoCom2Aliquotas;
 
 class IKCV extends ImpostoCom2Aliquotas
 {

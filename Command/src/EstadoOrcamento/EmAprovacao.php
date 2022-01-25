@@ -7,10 +7,11 @@ use Command\EstadoOrcamento\{EstadoDeUmOrcamento, Aprovado, Reprovado};
 
 class EmAprovacao extends EstadoDeUmOrcamento
 {
-  private $desconto = 0.05;
+  private float $desconto;
 
   public function __construct()
   {
+    $this->desconto = 0.05;
     $this->estadoAtual = 'Em aprovação';
   }
 

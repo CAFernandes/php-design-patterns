@@ -13,7 +13,7 @@ class Reprovado extends EstadoDeUmOrcamento
   }
   public function calculaDescontoExtra(Orcamento $orcamento): float
   {
-    throw new Exception("Orçamentos reprovados não recebem desconto extra");
+    throw new \DomainException("Orçamentos reprovados não recebem desconto extra");
   }
 
   public function finaliza(Orcamento $orcamento): void

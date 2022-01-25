@@ -6,9 +6,10 @@ use State\Orcamento;
 
 class Aprovado extends EstadoDeUmOrcamento
 {
-  private $desconto = 0.09;
+  private float $desconto;
   public function __construct()
   {
+    $this->desconto = 0.09;
     $this->estadoAtual = 'Aprovado';
   }
   public function calculaDescontoExtra(Orcamento $orcamento): float

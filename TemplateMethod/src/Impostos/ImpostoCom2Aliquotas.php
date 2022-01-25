@@ -3,12 +3,13 @@
 namespace TemplateMethod\Impostos;
 
 use TemplateMethod\Orcamento;
+use TemplateMethod\Impostos\Imposto;
 
 abstract class ImpostoCom2Aliquotas implements Imposto
 {
   protected static $taxaMinima = 0;
   protected static $taxaMaxima = 0;
-  public function calcula(Orcamento $orcamento)
+  public function calcula(Orcamento $orcamento): float
   {
     if ($this->deveAplicarTaxaMaxima($orcamento)) {
       return $this->aplicaTaxaMaxima($orcamento);
