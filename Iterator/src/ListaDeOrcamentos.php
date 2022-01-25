@@ -26,10 +26,17 @@ class ListaDeOrcamentos implements \IteratorAggregate
   }
   public function orcamentosFinalizados(): array
   {
-    return array_filter(
-      $this->orcamentos,
-      fn (Orcamento $orcamento) => $orcamento->estadoAtual instanceof Finalizado
-    );
+    $finalizados = [];
+    foreach ($this->orcamentos as $orcamento) {
+      if ($orcamento->getClassEstado() == get_class(new Finalizado)) {
+        $finalizados[]  = $orcamento;
+      }
+    }
+    return $finalizados;
+    // return array_filter(
+    //   $this->orcamentos,
+    //   fn (Orcamento $orcamento) => $orcamento->getClassEstado() instanceof Finalizado
+    // );
   }
   public function __toString()
   {

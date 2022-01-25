@@ -24,8 +24,8 @@ class GerarPedidoHandler
 
     self::$pedido = new Pedido($gerarPedidoCommand->getNomeCliente(), self::$orcamento);
 
-    echo "Cria pedido no banco de dados" . PHP_EOL;
-    echo "Envia e-mail para cliente" . PHP_EOL;
-    echo '<pre>', print_r(self::$pedido, true), '</pre>';
+    echo "Cria pedido no banco de dados" . PHP_EOL, "</br>";
+    echo "Envia e-mail para cliente" . PHP_EOL, "</br>";
+    echo '<pre>', self::$pedido, '</pre>';
   }
 }

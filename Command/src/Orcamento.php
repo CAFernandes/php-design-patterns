@@ -40,6 +40,10 @@ class Orcamento
       $this->valor = $this->valor;
     }
   }
+  public function estado(): string
+  {
+    return $this->estadoAtual->getEstado();
+  }
   public function aprova(): void
   {
     $this->estadoAtual->aprova($this);

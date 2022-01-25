@@ -13,4 +13,4 @@ $orcamento = new Orcamento(array(
   new Item("CANETA", 150),
 ));
 
-echo $orcamento->getValor();
+echo "<strong> Valor Orçamento:</strong>", PHP_EOL, $orcamento->getValor();

@@ -1,9 +1,9 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 
-// use Strategy\{Orcamento, CalculadoraDeImpostos};
-// use Strategy\Impostos\{ISS, ICMS};
+use Strategy\{Orcamento, CalculadoraDeImpostos};
+use Strategy\Impostos\{ISS, ICMS};
 
-$calculadora = new Strategy\CalculadoraDeImpostos();
-echo $calculadora->calcula(new Strategy\Orcamento(500), new Strategy\Impostos\ICMS()), '</br>';
-echo $calculadora->calcula(new Strategy\Orcamento(500), new Strategy\Impostos\ISS());
+$calculadora = new CalculadoraDeImpostos();
+echo "<strong>Imposto ICMS sobre o Orçamento:</strong> R$", PHP_EOL, $calculadora->calcula(new Orcamento(500), new ICMS()), '</br>';
+echo "<strong>Imposto ISS sobre o Orçamento:</strong> R$", PHP_EOL, $calculadora->calcula(new Orcamento(500), new ISS());
