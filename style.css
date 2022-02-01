@@ -63,3 +63,12 @@ h1, h2, h3, h4, h5, h6 {
 .card-title {
   cursor: pointer;
 }
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+pre {
+  margin: 2rem;
+}

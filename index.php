@@ -56,7 +56,7 @@
       file_exists(__DIR__ . "/$designPattern/index.php") ? require_once __DIR__ . "/$designPattern/index.php" : 'Unexpeted Error 404 - Design Pattern Not Found';
     } else {
       echo "Escolha um Design Pattern";
-      phpinfo();
+      // phpinfo();
     }
     ?>
   </main>
