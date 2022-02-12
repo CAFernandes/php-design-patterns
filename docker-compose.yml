@@ -9,4 +9,4 @@ services:
     ports:
       - '8080:8080'
     volumes:
-      - /home/cafernandes/php-projects/php-design-patterns:/usr/src/myapp
+      - .:/usr/src/myapp

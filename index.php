@@ -13,51 +13,30 @@
 
 <body>
   <div class="card card-main">
-    <div class="card card-sub">
-      <div class="card-title">
-        Chains Of Responsibility
+    <?php
+    foreach (scandir(__DIR__) as $content) :
+      if (!preg_match('/^([A-Z]{1}[a-z])/', $content)) continue;
+      preg_match_all('/([A-z]{1}[a-z]+)/', $content, $match);
+      $directory = $match[0];
+    ?>
+      <div class="card card-sub">
+        <div class="card-title">
+          <?= implode(' ', $directory) ?>
+        </div>
       </div>
-    </div>
-    <div class="card card-sub">
-      <div class="card-title">
-        Command
-      </div>
-    </div>
-    <div class="card card-sub">
-      <div class="card-title">
-        Iterator
-      </div>
-    </div>
-    <div class="card card-sub">
-      <div class="card-title">
-        Observer
-      </div>
-    </div>
-    <div class="card card-sub">
-      <div class="card-title">
-        State
-      </div>
-    </div>
-    <div class="card card-sub">
-      <div class="card-title">
-        Strategy
-      </div>
-    </div>
-    <div class="card card-sub">
-      <div class="card-title">
-        Template Method
-      </div>
-    </div>
+    <?php
+    endforeach;
+    ?>
   </div>
   <main>
     <?php
-    if (count($_GET) > 0) {
+    if (count($_GET) > 0) :
       $designPattern = array_keys($_GET)[0];
       file_exists(__DIR__ . "/$designPattern/index.php") ? require_once __DIR__ . "/$designPattern/index.php" : 'Unexpeted Error 404 - Design Pattern Not Found';
-    } else {
+    else :
       echo "Escolha um Design Pattern";
-      // phpinfo();
-    }
+    // phpinfo();
+    endif;
     ?>
   </main>
 </body>
