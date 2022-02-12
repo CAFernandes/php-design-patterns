@@ -1,9 +1,9 @@
 <?php
 
-namespace Composite\Descontos;
+namespace Facade\Descontos;
 
-use Composite\Desconstos\Desconto;
-use Composite\Orcamento;
+use Facade\Desconstos\Desconto;
+use Facade\Orcamento;
 
 class SemDesconto extends Desconto
 {

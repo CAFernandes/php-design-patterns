@@ -1,9 +1,9 @@
 <?php
 
-namespace Composite\EstadoOrcamento;
+namespace Facade\EstadoOrcamento;
 
-use Composite\Orcamento;
-use Composite\EstadoOrcamento\{EstadoDeUmOrcamento, Aprovado, Reprovado};
+use Facade\Orcamento;
+use Facade\EstadoOrcamento\{EstadoDeUmOrcamento, Aprovado, Reprovado};
 
 class EmAprovacao extends EstadoDeUmOrcamento
 {
