@@ -1,9 +1,8 @@
 <?php
 
-namespace Proxy\Relatorio\Formatos;
+namespace Flyweight\Relatorio\Formatos;
 
-use Proxy\Relatorio\Conteudos\ConteudoExportado;
-use ZipArchive;
+use Flyweight\Relatorio\Conteudos\ConteudoExportado;
 
 class Zip implements ArquivoExportado
 {
@@ -15,8 +14,8 @@ class Zip implements ArquivoExportado
   public function salvar(ConteudoExportado $conteudoExportado): string
   {
     $caminhoArquivo = tempnam(sys_get_temp_dir(), 'zip');
-    $zip = new ZipArchive();
-    $zip->open($caminhoArquivo, ZipArchive::CREATE);
+    $zip = new \ZipArchive();
+    $zip->open($caminhoArquivo, \ZipArchive::CREATE);
     $zip->addFromString($this->nomeArquivo, serialize($conteudoExportado->conteudo()));
     $zip->close();
     return $caminhoArquivo;

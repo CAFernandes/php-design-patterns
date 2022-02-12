@@ -1,9 +1,9 @@
 <?php
 
-namespace Composite;
+namespace Flyweight;
 
-use Composite\Orcamento;
-use Composite\Impostos\Imposto;
+use Flyweight\Orcamento;
+use Flyweight\Impostos\Imposto;
 
 class CalculadoraDeImpostos
 {

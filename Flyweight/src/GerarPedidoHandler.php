@@ -1,9 +1,9 @@
 <?php
 
-namespace Proxy;
+namespace Flyweight;
 
-use Proxy\{Orcamento, Pedido};
-use Proxy\AcoesAoGerarPedido\AcaoAposGerarPedido;
+use Flyweight\{Orcamento, Pedido};
+use Flyweight\AcoesAoGerarPedido\AcaoAposGerarPedido;
 
 class GerarPedidoHandler
 {
@@ -31,7 +31,7 @@ class GerarPedidoHandler
       self::$orcamento->adicionaItem(new Item("Item $i", $gerarPedidoCommand->getValorItem()));
     }
 
-    self::$pedido = new Pedido($gerarPedidoCommand->getNomeCliente(), self::$orcamento);
+    self::$pedido = new Pedido($gerarPedidoCommand->dados(), self::$orcamento);
     foreach ($this->acoesAposGerarPedido as $acao) {
       $acao->executar(self::$pedido);
       echo '</br>';

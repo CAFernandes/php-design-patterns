@@ -1,11 +1,11 @@
 <?php
 
-namespace Proxy\AcoesAoGerarPedido;
+namespace Flyweight\AcoesAoGerarPedido;
 
-use Proxy\AcoesAoGerarPedido\AcaoAposGerarPedido;
-use Proxy\Pedido;
-use Proxy\Relatorio\Conteudos\OrcamentoExportado;
-// use Proxy\Relatorio\Formatos\{Json, Xml};
+use Flyweight\AcoesAoGerarPedido\AcaoAposGerarPedido;
+use Flyweight\Pedido;
+use Flyweight\Relatorio\Conteudos\OrcamentoExportado;
+// use Flyweight\Relatorio\Formatos\{Json, Xml};
 
 class GravarPedido implements AcaoAposGerarPedido
 {

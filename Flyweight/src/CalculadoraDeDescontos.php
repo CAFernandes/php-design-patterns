@@ -1,10 +1,10 @@
 <?php
 
-namespace Proxy;
+namespace Flyweight;
 
-use Proxy\{Orcamento};
-use Proxy\Descontos\{DescontoQuantidadeDeItens, DescontoValorTotal, SemDesconto};
-use Proxy\AcoesAoGerarPedido\LogDescontos;
+use Flyweight\{Orcamento};
+use Flyweight\Descontos\{DescontoQuantidadeDeItens, DescontoValorTotal, SemDesconto};
+use Flyweight\AcoesAoGerarPedido\LogDescontos;
 
 class CalculadoraDeDescontos
 {
