@@ -13,5 +13,7 @@ $orcamento = new Orcamento(array(
   new Item("CANETA", 150),
 ));
 $valor = $orcamento->getValor();
-echo "<li><strong>Custo:</strong>\t", $orcamento->getValor(), "</li></br></br>";
-echo "<li><strong>Desconto:</strong>\t", $calculadora->calcula($orcamento), '</li></br></br>';
+echo '<ul>';
+echo "<li><strong>Custo:</strong>\t", $orcamento->getValor(), "</li>";
+echo "<li><strong>Desconto:</strong>\t", $calculadora->calcula($orcamento), '</li>';
+echo '</ul>';

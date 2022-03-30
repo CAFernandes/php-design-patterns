@@ -21,8 +21,9 @@ $calculadora = new CalculadoraDeImpostos();
  * ICPP: 24.75
  * IKCV: 33
  */
-
+echo '<ul>';
 echo "<li><strong>ICMS:</strong>\t", $calculadora->calcula($orcamento, new ICMS()), '</li></br>';
 echo "<li><strong>ISS:</strong>\t", $calculadora->calcula($orcamento, new ISS()), '</li></br>';
 echo "<li><strong>ICPP:</strong>\t", $calculadora->calcula($orcamento, new ICPP()), '</li></br>';
 echo "<li><strong>IKCV:</strong>\t", $calculadora->calcula($orcamento, new IKCV()), '</li></br>';
+echo '</ul>';
