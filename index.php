@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formação Arquiteto PHP</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <script defer src="index.js"></script>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/index.js"></script>
 </head>
 
 <body>
