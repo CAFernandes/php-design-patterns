@@ -14,7 +14,7 @@
 <body>
   <div class="card card-main">
     <?php
-    foreach (scandir(__DIR__) as $content) :
+    foreach (scandir(__DIR__ . '/src') as $content) :
       if (!preg_match('/^([A-Z]{1}[a-z])/', $content)) continue;
       preg_match_all('/([A-z]{1}[a-z]+)/', $content, $match);
       $directory = $match[0];
@@ -32,7 +32,7 @@
     <?php
     if (count($_GET) > 0) :
       $designPattern = array_keys($_GET)[0];
-      file_exists(__DIR__ . "/$designPattern/index.php") ? require_once __DIR__ . "/$designPattern/index.php" : 'Unexpeted Error 404 - Design Pattern Not Found';
+      file_exists(__DIR__ . "/src/$designPattern/index.php") ? require_once __DIR__ . "/src/$designPattern/index.php" : 'Unexpeted Error 404 - Design Pattern Not Found';
     else :
       echo "Escolha um Design Pattern";
     // phpinfo();

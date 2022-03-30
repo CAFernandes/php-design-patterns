@@ -1,8 +1,10 @@
-FROM php
+FROM composer:latest
 
-COPY . /usr/src/myapp
+COPY . /app
 
-WORKDIR /usr/src/myapp
+WORKDIR /app
+
+RUN composer dump-autoload
 
 EXPOSE 8080
 

@@ -2,11 +2,11 @@ version: '3'
 services:
   php:
     build:
-      dockerfile: dockerfile
       context: .
-    image: cafernandes/php-design-pattern
+      dockerfile: dockerfile
+    image: cafernandes/composer-php-test
     container_name: php-design-pattern
     ports:
       - '8080:8080'
     volumes:
-      - .:/usr/src/myapp
+      - .:/app
