@@ -3,7 +3,7 @@
 namespace Flyweight\Descontos;
 
 use Flyweight\Desconstos\Desconto;
-use Flyweight\Orcamento;
+use Flyweight\Orcamento\Orcamento;
 
 class SemDesconto extends Desconto
 {

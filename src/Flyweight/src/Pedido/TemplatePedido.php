@@ -1,8 +1,8 @@
 <?php
 
-namespace Flyweight;
+namespace Flyweight\Pedido;
 
-class DadosExtrinsecosPedido
+class TemplatePedido
 {
   private string $nomeCliente;
   private \DateTimeInterface $dataFinalizacao;

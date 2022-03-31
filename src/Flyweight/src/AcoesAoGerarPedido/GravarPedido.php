@@ -3,7 +3,7 @@
 namespace Flyweight\AcoesAoGerarPedido;
 
 use Flyweight\AcoesAoGerarPedido\AcaoAposGerarPedido;
-use Flyweight\Pedido;
+use Flyweight\Pedido\Pedido;
 use Flyweight\Relatorio\Conteudos\OrcamentoExportado;
 // use Flyweight\Relatorio\Formatos\{Json, Xml};
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Flyweight;
+namespace Flyweight\Orcamento;
 
-use Flyweight\EstadoOrcamento\Finalizado;
+use Flyweight\Orcamento\EstadoOrcamento\Finalizado;
 use ArrayIterator;
 use Traversable;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Flyweight\EstadoOrcamento;
+namespace Flyweight\Orcamento\EstadoOrcamento;
 
-use Flyweight\EstadoOrcamento\{EstadoDeUmOrcamento, Finalizado};
-use Flyweight\Orcamento;
+use Flyweight\Orcamento\EstadoOrcamento\{EstadoDeUmOrcamento, Finalizado};
+use Flyweight\Orcamento\Orcamento;
 
 class Reprovado extends EstadoDeUmOrcamento
 {

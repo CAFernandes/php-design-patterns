@@ -2,7 +2,7 @@
 
 namespace Flyweight\Desconstos;
 
-use Flyweight\Orcamento;
+use Flyweight\Orcamento\Orcamento;
 
 abstract class Desconto
 {

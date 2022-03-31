@@ -2,7 +2,7 @@
 
 namespace Flyweight\Relatorio\Conteudos;
 
-use Flyweight\Orcamento;
+use Flyweight\Orcamento\Orcamento;
 
 class OrcamentoExportado implements ConteudoExportado
 {

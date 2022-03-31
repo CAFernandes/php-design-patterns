@@ -1,8 +1,8 @@
 <?php
 
-namespace Flyweight;
+namespace Flyweight\Orcamento;
 
-use Flyweight\Orcavel;
+use Flyweight\Orcamento\Orcavel;
 
 class Item implements Orcavel
 {

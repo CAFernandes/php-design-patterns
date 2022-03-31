@@ -1,6 +1,6 @@
 <?php
 
-namespace Flyweight;
+namespace Flyweight\Orcamento;
 
 interface Orcavel
 {

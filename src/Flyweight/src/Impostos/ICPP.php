@@ -2,7 +2,7 @@
 
 namespace Flyweight\Impostos;
 
-use Flyweight\Orcamento;
+use Flyweight\Orcamento\Orcamento;
 use Flyweight\Impostos\ImpostoCom2Aliquotas;
 
 class ICPP extends ImpostoCom2Aliquotas

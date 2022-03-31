@@ -2,7 +2,7 @@
 
 namespace Flyweight\Relatorio\Conteudos;
 
-use Flyweight\Pedido;
+use Flyweight\Pedido\Pedido;
 
 class PedidoExportado implements ConteudoExportado
 {

@@ -1,24 +1,20 @@
 <?php
 
-namespace Flyweight;
+namespace Flyweight\Pedido;
 
-use Flyweight\{Orcamento, DadosExtrinsecosPedido};
+use Flyweight\Orcamento\Orcamento;
 
 class Pedido
 {
   public int $protocolo;
   public Orcamento $orcamento;
-  public DadosExtrinsecosPedido $dados;
-  // public CacheOrcamentoProxy $FlyweightOrcamento;
+  public TemplatePedido $dados;
 
-  public function __construct(DadosExtrinsecosPedido $dados, Orcamento $orcamento)
+  public function __construct(TemplatePedido $dados, Orcamento $orcamento)
   {
     $this->protocolo = rand(200000000, 600000000);
     $this->dados = $dados;
-    // $this->nomeCliente = $nomeCliente;
     $this->orcamento = $orcamento;
-    // $this->dataFinalizacao = new \DateTimeImmutable();
-    // $this->FlyweightOrcamento = new CacheOrcamentoProxy($this->orcamento);
   }
   public function nomeCliente(): string
   {

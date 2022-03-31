@@ -1,8 +1,8 @@
 <?php
 
-namespace Flyweight;
+namespace Flyweight\Orcamento;
 
-use Flyweight\Orcamento;
+use Flyweight\Orcamento\Orcamento;
 use Flyweight\Impostos\Imposto;
 
 class CalculadoraDeImpostos

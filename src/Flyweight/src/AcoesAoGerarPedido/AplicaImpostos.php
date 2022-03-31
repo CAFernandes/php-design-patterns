@@ -3,7 +3,7 @@
 namespace Flyweight\AcoesAoGerarPedido;
 
 use Flyweight\Impostos\{ICMS, ICPP, IKCV, ISS};
-use Flyweight\Pedido;
+use Flyweight\Pedido\Pedido;
 
 class AplicaImpostos implements AcaoAposGerarPedido
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Flyweight\EstadoOrcamento;
+namespace Flyweight\Orcamento\EstadoOrcamento;
 
-use Flyweight\Orcamento;
+use Flyweight\Orcamento\Orcamento;
 
 abstract class EstadoDeUmOrcamento
 {

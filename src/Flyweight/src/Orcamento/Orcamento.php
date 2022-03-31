@@ -1,9 +1,9 @@
 <?php
 
-namespace Flyweight;
+namespace Flyweight\Orcamento;
 
-use Flyweight\Orcavel;
-use Flyweight\EstadoOrcamento\{EstadoDeUmOrcamento, EmAprovacao};
+use Flyweight\Orcamento\Orcavel;
+use Flyweight\Orcamento\EstadoOrcamento\{EstadoDeUmOrcamento, EmAprovacao};
 
 class Orcamento implements Orcavel
 {

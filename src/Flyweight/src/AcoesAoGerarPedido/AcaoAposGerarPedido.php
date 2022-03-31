@@ -2,7 +2,7 @@
 
 namespace Flyweight\AcoesAoGerarPedido;
 
-use Flyweight\Pedido;
+use Flyweight\Pedido\Pedido;
 
 interface AcaoAposGerarPedido
 {

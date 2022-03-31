@@ -2,7 +2,7 @@
 
 namespace Flyweight\Impostos;
 
-use Flyweight\Orcamento;
+use Flyweight\Orcamento\Orcamento;
 use Flyweight\Impostos\Imposto;
 
 

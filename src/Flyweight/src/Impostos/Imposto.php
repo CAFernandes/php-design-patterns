@@ -2,7 +2,7 @@
 
 namespace Flyweight\Impostos;
 
-use Flyweight\Orcamento;
+use Flyweight\Orcamento\Orcamento;
 
 abstract class Imposto
 {
@@ -22,6 +22,6 @@ abstract class Imposto
 
   private function realizaCalculoDeOutroImposto(Orcamento $orcamento): float
   {
-    return isset($this->outroImposto) ? 0 : $this->outroImposto->calculaImposto($orcamento);
+    return is_null($this->outroImposto) ? 0 : $this->outroImposto->calculaImposto($orcamento);
   }
 }
