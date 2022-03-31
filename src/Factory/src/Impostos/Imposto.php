@@ -8,7 +8,7 @@ abstract class Imposto
 {
   private ?Imposto $outroImposto;
 
-  public function __construct(Imposto $outroImposto)
+  public function __construct(?Imposto $outroImposto)
   {
     $this->outroImposto = $outroImposto;
   }
