@@ -9,6 +9,7 @@
       "Decorators\\": "src/Decorators/src/",
       "Facade\\": "src/Facade/src/",
       "Flyweight\\": "src/Flyweight/src/",
+      "Factory\\": "src/Factory/src/",
       "Iterator\\": "src/Iterator/src/",
       "Observer\\": "src/Observer/src/",
       "Proxy\\": "src/Proxy/src/",
