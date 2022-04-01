@@ -65,8 +65,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 main {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: space-around;
   /* flex-wrap: wrap; */
   flex-direction: column;
   padding: 2em;
