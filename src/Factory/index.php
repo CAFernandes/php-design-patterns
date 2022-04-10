@@ -2,7 +2,7 @@
 require_once dirname(__DIR__, 2) . '/vendor/autoload.php';
 
 use Factory\Pedido\{CriadorDePedido, GerarPedidoCommand, GerarPedidoHandler};
-use Factory\AcoesAoGerarPedido\{EnviarEmail, GravarPedido, LogGerarPedido, AplicaImpostos};
+use Factory\AcoesAoGerarPedido\{EnviarEmail, GravarPedido, LogGerarPedido, AplicaImpostos, EmitirNotaFiscal};
 use Factory\Orcamento\ListaDeOrcamentos;
 
 $listaOrcamentos = new ListaDeOrcamentos();
@@ -19,6 +19,7 @@ for ($i = 0; $i < 1000; $i++) {
   $gerarPedidoHandler->adicionaAcao(new GravarPedido());
   $gerarPedidoHandler->adicionaAcao(new EnviarEmail());
   $gerarPedidoHandler->adicionaAcao(new LogGerarPedido());
+  $gerarPedidoHandler->adicionaAcao(new EmitirNotaFiscal());
   $gerarPedidoHandler->execute($gerarPedidoCommand);
   $listaOrcamentos->addOrcamento($gerarPedidoCommand->orcamento());
 }

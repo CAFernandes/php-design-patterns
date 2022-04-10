@@ -34,11 +34,15 @@ class Orcamento implements Orcavel
       $this->itens,
       fn (float $valorAcumulado, Orcavel $item,) => $item->valor() + $valorAcumulado,
       0
-    ) + $this->ValorImposto;
+    );
   }
   public function getQuantidadeItens(): int
   {
     return count($this->itens);
+  }
+  public function listItensOrcamento(): array
+  {
+    return $this->itens;
   }
   public function adicionaItem(Orcavel $item): void
   {

@@ -20,6 +20,14 @@ class Pedido
   {
     return $this->dados->nomeCliente();
   }
+  public function cnpj()
+  {
+    return $this->dados->cnpj();
+  }
+  public function razaoSocial()
+  {
+    return $this->dados->razaoSocial();
+  }
   public function dataFinalizacao(string $formato): string
   {
     return $this->dados->dataFinalizacao()->format($formato);
@@ -32,8 +40,16 @@ class Pedido
   {
     return $this->orcamento->valor();
   }
+  public function orcamentoImpostos(): float
+  {
+    return $this->orcamento->getImpostos();
+  }
   public function orcamentoQuantidadeDeItens(): int
   {
     return $this->orcamento->getQuantidadeItens();
+  }
+  public function orcamentoListaItens(): array
+  {
+    return $this->orcamento->listItensOrcamento();
   }
 }
