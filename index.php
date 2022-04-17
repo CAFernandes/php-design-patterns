@@ -30,13 +30,7 @@
   </div>
   <main>
     <?php
-    if (count($_GET) > 0) :
-      $designPattern = array_keys($_GET)[0];
-      file_exists(__DIR__ . "/src/$designPattern/index.php") ? require_once __DIR__ . "/src/$designPattern/index.php" : 'Unexpeted Error 404 - Design Pattern Not Found';
-    else :
-      echo "Escolha um Design Pattern";
-    // phpinfo();
-    endif;
+    require_once __DIR__ . "/src/index.php"
     ?>
   </main>
 </body>
